@@ -773,7 +773,7 @@ display: none;
         justify-self: center;
     }
     
- }
+
       /*Estilos mobile Personajes*/
     .personajes_main_baki {
         display: grid;
@@ -915,3 +915,4 @@ display: none;
         grid-area: img;
         justify-self: center;
     }
+ }

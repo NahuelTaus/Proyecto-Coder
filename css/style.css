@@ -1,0 +1,294 @@
+ /*Estilos generales*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: antiquewhite;
+}
+body{
+    background-color: rgb(39, 35, 35);
+}
+h1, h2 {
+ font-size: 26px;
+ font-weight: 700;
+ color: rgb(228, 200, 44);
+ padding: 50px 40px 30px ;
+ margin: auto;
+} 
+p {
+    margin-left: 20px;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+main article div p, main article div img  {
+    display: block;
+}
+ /*Estilos footer*/
+footer {
+    background-color: rgb(168, 9, 9);
+    width: 100%;
+    position: absolute;
+    display: block;
+    margin-top: 10%;
+}
+footer p, footer ul li a {
+    color: black;
+    font-size: 18px;
+}
+.footer_ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4,1fr) ;
+    grid-template-areas: 
+    "copy copy contac contac contac face"
+    "copy copy contac contac contac twit"
+    "copy copy contac contac contac insta"
+    "copy copy contac contac contac yout"
+    ;
+}
+.footer_ul_copy {
+    grid-area: copy ;
+    display: flex;
+    justify-content: baseline;
+    align-items: end;
+}
+.footer_ul_contac {
+    grid-area: contac ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_ul_contac a {
+    font-size: 26px;
+}
+.footer_ul_face {
+    grid-area: face ;
+}
+.footer_ul_twit {
+    grid-area: twit ;
+}
+.footer_ul_insta {
+    grid-area: insta ;
+}
+.footer_ul_yout {
+    grid-area: yout ;
+}
+ion-icon {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+  }
+/*Estilos del header*/
+header {
+    background-color: rgb(168, 9, 9);
+    height: 50px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+}
+header nav ul li a {
+    color: black;
+    font-size: 18px;
+}
+.header_nav {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+"icono icono icono icono icono icono icono icono icono icono icono icono icono icono icono icono icono autor pers gale";
+}
+.header_nav_item_inicio {
+    grid-area: icono ;
+
+}
+.header_nav_item_autor{
+    grid-area: autor;
+    margin: 10px;
+}
+.header_nav_item_personajes{
+    grid-area: pers;
+    margin: 10px;
+}
+.header_nav_item_galeria{
+    grid-area: gale ;
+    margin: 10px;
+}
+
+ /*Estilos Pag Autor*/
+#list_autor ul li {
+    list-style:square inside ;
+    padding-left: 10px;
+}
+ /*Estilos Pag Index*/
+.index_main_h1 {
+   color:  rgb(39, 35, 35);;
+}
+.index_main_image {
+    display: block;
+    margin: 0 auto;
+}
+
+.index_main_1_p {
+    text-align: center
+}
+.index_main_1_h2 {
+    text-align: center
+}
+.index_main_1_p2{
+    text-align: center;
+}
+.index_main_2001 {
+    border: 10px solid #d1b412;
+    margin: 5%;
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows:repeat(3,1fr) ;
+    grid-template-areas: 
+    "title title title"
+    "text text img"
+    "vid vid img"
+    ;
+}
+.index_main_2001_h2 {
+    grid-area: title;
+}
+.index_main_2001_p {
+    grid-area: text ;
+}
+.index_main_2001_iframe {
+    grid-area: vid ;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.index_main_2001_img {
+    grid-area: img ;
+    margin: 30px ;
+}
+.index_main_20012 {
+    border: 10px solid #d1b412;
+    margin: 5%;
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows:repeat(3,1fr) ;
+    grid-template-areas: 
+    "title title title"
+    "text text img"
+    "vid vid img"
+    ;
+}
+.index_main_20012_h2 {
+    grid-area: title;
+}
+.index_main_20012_p {
+    grid-area: text ;
+}
+.index_main_20012_iframe {
+    grid-area: vid ;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.index_main_20012_img {
+    grid-area: img ;
+    margin: 30px ;
+}
+.index_main_2018 {
+    border: 10px solid #d1b412;
+    margin: 5%;
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows:repeat(3,1fr) ;
+    grid-template-areas: 
+    "title title title"
+    "text text img"
+    "vid vid img"
+    ;
+}
+.index_main_2018_h2 {
+    grid-area: title;
+}
+.index_main_2018_p {
+    grid-area: text ;
+}
+.index_main_2018_iframe {
+    grid-area: vid ;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.index_main_2018_img {
+    grid-area: img ;
+    margin: 30px ;
+}
+.index_main_2020 {
+    border: 10px solid #d1b412;
+    margin: 5%;
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows:repeat(3,1fr) ;
+    grid-template-areas: 
+    "title title title"
+    "text text img"
+    "vid vid img"
+    ;
+}
+.index_main_2020_h2 {
+    grid-area: title;
+}
+.index_main_2020_p {
+    grid-area: text ;
+}
+.index_main_2020_iframe {
+    grid-area: vid ;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.index_main_2020_img {
+    grid-area: img ;
+    margin: 30px ;
+}
+.index_main_2021 {
+    border: 10px solid #d1b412;
+    margin: 5%;
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows:repeat(3,1fr) ;
+    grid-template-areas: 
+    "title title title"
+    "text text img"
+    "vid vid img"
+    ;
+}
+.index_main_2021_h2 {
+    grid-area: title;
+}
+.index_main_2021_p {
+    grid-area: text ;
+}
+.index_main_2021_iframe {
+    grid-area: vid ;
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.index_main_2021_img {
+    grid-area: img ;
+    margin: 30px ;
+}

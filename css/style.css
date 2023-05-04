@@ -118,12 +118,6 @@ header nav ul li a {
     grid-area: gale ;
     margin: 10px;
 }
-
- /*Estilos Pag Autor*/
-#list_autor ul li {
-    list-style:square inside ;
-    padding-left: 10px;
-}
  /*Estilos Pag Index*/
 .index_main_h1 {
    color:  rgb(39, 35, 35);;
@@ -292,3 +286,61 @@ header nav ul li a {
     grid-area: img ;
     margin: 30px ;
 }
+ /*Estilos Pag Autor*/
+ #list_autor ul li {
+    list-style:square inside ;
+    padding-left: 10px;
+}
+ /*Estilos Pag Contactos*/
+ .contacto_main_form {
+    width:60% ;
+    height: 80%;
+    margin: 20%;
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+    grid-template-rows:40px,50px,30px,1fr;
+    grid-template-areas: 
+    "name namei email emaili"
+    "text text text text"
+    "texti texti texti texti"
+    "submit submit submit submit"
+    ;
+ }
+ .contacto_main_form_name {
+    grid-area: name ;
+    justify-self: end;
+ }
+ .contacto_main_form_email {
+    grid-area: email ;
+    justify-self: end;
+ }
+ .contacto_main_form_text {
+    grid-area: text ;
+    justify-self: center;
+
+ }
+ .contacto_main_form_submit {
+    grid-area: submit ;
+    width:200px ;
+    height: 30px;
+    justify-self: center;
+    color: #000;
+ }
+ .contacto_main_form_name_input {
+    grid-area: namei;
+    color: #000;
+ }
+ .contacto_main_form_email_input{
+    grid-area: emaili;
+    color: #000;
+ }
+ .contacto_main_form_text_input{
+    grid-area: texti;
+    width:500px ;
+    height: 500px;
+    justify-self: center;
+    color: #000;
+ }
+ .contacto_main_form_submit_button{
+display: none;
+ }

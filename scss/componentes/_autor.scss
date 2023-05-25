@@ -1,0 +1,49 @@
+.autor_main_itadaki {
+    display: map-get($autorCont, disp);
+    grid-template-columns:map-get($autorCont, grid_columns);
+    grid-template-rows: map-get($autorCont, grid_rows);
+    grid-template-areas: map-get($autorCont, grid_areas);
+ }
+ .autor_main_itadaki_h2 {
+    grid-area: h2;
+ }
+ .autor_main_itadaki_img {
+    grid-area: img ;
+    margin: nth($margin, 2)
+ }
+ .autor_main_itadaki_p {
+    grid-area: p ;
+ }
+ .autor_main_itadaki_ul {
+    grid-area: ul ;
+    margin: nth($margin, 2)
+ }
+ .autor_main_itadaki_ul , .autor_main_paru_ul {
+    @extend %autor_list;
+}
+.autor_main_paru {
+    display: map-get($autorCont, disp);
+    grid-template-columns:map-get($autorCont, grid_columns);
+    grid-template-rows: map-get($autorCont, grid_rows);
+    grid-template-areas: map-get($autorCont, grid_areas);
+ }
+ .autor_main_paru_h2 {
+    grid-area: h2;
+ }
+ .autor_main_paru_img {
+    grid-area: img ;
+    margin: nth($margin, 2)
+ }
+ .autor_main_paru_p {
+    grid-area: p ;
+ }
+ .autor_main_paru_ul {
+    grid-area: ul ;
+    margin: nth($margin, 2)
+ }
+ @media only screen and (max-width: 768px) {
+.autor_main_itadaki_img, .autor_main_paru_img {
+   height: 80%;
+   width: 80%;
+}
+ }

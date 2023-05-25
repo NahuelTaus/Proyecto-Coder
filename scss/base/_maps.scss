@@ -1,0 +1,82 @@
+$footer: (
+    w: 100%,
+    ption: absolute,
+    disp: block,
+    margin-t: 10%,
+);
+$header: (
+    h: 50px,
+    disp: flex,
+    ption: fixed,
+    w: 100%,
+);
+$indexCont: (
+    borde: 10px solid nth($colores, 5),
+    m: 5%,
+    disp: grid,
+    grid_columns:repeat(3,1fr) ,
+    grid_rows:repeat(3,1fr) ,
+    grid_areas: 
+    "title title title"
+    "text text img"
+    "vid vid img"
+    ,
+);
+$autorCont: (
+    disp: grid,
+    grid_columns: 1fr ,
+    grid_rows: "100px, 500px, 150px, 150px" ,
+    grid_areas: 
+    "h2"
+    "img"
+    "p"
+    "ul"
+    ,
+);
+$persoCont: (
+    disp: grid,
+    grid_columns:"1fr,1fr,1fr",
+    grid_rows:"1fr,1fr,1fr" ,
+    grid_areas:
+    "h2 h2 h2"
+    "img p p"
+    "img p p"
+    ,
+);
+$ContacCont: (
+    w:60% ,
+    h: 80%,
+    m: 20%,
+    disp: grid,
+    grid_columns:repeat(8,1fr) ,
+    grid_rows:"40px,50px,30px,1fr",
+    grid_areas: 
+    "name name namei namei email emaili emaili emaili"
+    "text text text text text text text text"
+    "texti texti texti texti texti texti texti texti"
+    "submit submit submit submit submit submit submit submit"
+    ,
+);
+$indexMov: (
+    bd: 10px solid nth($colores, 5),
+    m: 5%,
+    disp: grid,
+    grid_columns:repeat(3,1fr) ,
+    grid_rows:repeat(4,1fr) ,
+    grid_areas: 
+    "title title title"
+    "img img img"
+    "text text text"
+    "vid vid vid"
+    ,
+);
+$persoMov:(
+    disp: grid,
+    grid_columns:"1fr,1fr,1fr" ,
+    grid_rows:"1fr,1fr,1fr" ,
+    grid_areas:
+    "h2 h2 h2"
+    "img img img"
+    "p p p"
+    ,
+);

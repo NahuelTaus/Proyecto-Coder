@@ -1,0 +1,66 @@
+.contacto_main_form {
+    width:map-get($ContacCont, w);
+    height:map-get($ContacCont, h);
+    margin: map-get($ContacCont, m);
+    display: map-get($ContacCont, disp);
+    grid-template-columns:map-get($ContacCont, grid_columns);
+    grid-template-rows:map-get($ContacCont,grid_rows);
+    grid-template-areas:map-get($ContacCont, grid_areas) ;
+ }
+.contacto_main_form_name {
+    grid-area: name ;
+    justify-self: nth($justify, 1);
+ }
+.contacto_main_form_email {
+    grid-area: email ;
+    justify-self: nth($justify, 1 );
+ }
+.contacto_main_form_text {
+    grid-area: text ;
+    justify-self: nth($justify, 2);
+
+ }
+.contacto_main_form_submit {
+    grid-area: submit ;
+    width:200px ;
+    height: 30px;
+    justify-self:nth($justify, 2);
+    color: nth($colores, 4 );
+ }
+.contacto_main_form_name_input {
+    grid-area: namei;
+    width: 60%;
+    color: nth($colores, 4 )
+ }
+.contacto_main_form_email_input{
+    grid-area: emaili;
+    width:60% ;
+    color: nth($colores, 4 );
+ }
+.contacto_main_form_text_input{
+    grid-area: texti;
+    width:500px ;
+    height: 500px;
+    justify-self: center;
+    color: nth($colores, 4 );
+ }
+.contacto_main_form_submit_button{
+display: none;
+ }
+ @media only screen and (max-width: 768px) {
+.contacto_main_form {
+    display: grid;
+    grid-template-columns:"1fr,1fr" ;
+    grid-template-rows: "30px 30px 30px 300px 30px";
+    grid-template-areas: 
+    "name namei"
+    "email emaili"
+    "text text"
+    "texti texti"
+    "submit submit";
+}
+.contacto_main_form_text_input {
+    width:300px ;
+    height:300px;  
+}
+}

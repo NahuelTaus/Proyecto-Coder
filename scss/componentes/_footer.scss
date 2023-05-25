@@ -1,0 +1,57 @@
+footer {
+    background-color: nth($colores,3);
+    width:map-get($footer,w);
+    position:map-get($footer,ption)  ;
+    display:map-get($footer,disp) ;
+    margin-top:map-get($footer, margin-t) ;
+    p {
+        color: nth($colores,4) ;
+        font-size: nth($fontS,3) ;
+    }
+    ul{
+        li{
+            a {
+                color: nth($colores,4) ;
+                font-size: nth($fontS,3) ;
+            }
+        }
+    }
+}
+.footer_ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4,1fr) ;
+    grid-template-areas: 
+    "copy copy contac contac contac face"
+    "copy copy contac contac contac twit"
+    "copy copy contac contac contac insta"
+    "copy copy contac contac contac yout"
+    ;
+}
+.footer_ul_copy {
+    grid-area: copy ;
+    @extend %flex_base;
+}
+.footer_ul_contac {
+    grid-area: contac ;
+    @extend %flex_centrado;
+    a {
+        font-size:nth($fontS,2);
+    }
+}
+.footer_ul_face {
+    grid-area: face ;
+}
+.footer_ul_twit {
+    grid-area: twit ;
+}
+.footer_ul_insta {
+    grid-area: insta ;
+}
+.footer_ul_yout {
+    grid-area: yout ;
+}
+ion-icon {
+    color:nth($colores,4);
+    font-size:nth($fontS,3);
+  }

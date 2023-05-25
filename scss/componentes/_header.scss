@@ -1,0 +1,40 @@
+header {
+    background-color:nth($colores,3);
+    height: map-get($header,h );
+    display: map-get($header,disp );
+    position: map-get($header,ption );
+    width: map-get($header,w );
+    nav {
+        ul {
+            li {
+                a{
+                    color:nth($colores,4);
+                    font-size:nth($fontS,3);
+                }
+            }
+        }
+    }
+}
+.header_nav {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+"icono icono icono icono icono icono icono icono icono icono icono icono icono icono icono icono icono autor pers gale";
+}
+.header_nav_item_inicio {
+    grid-area: icono ;
+
+}
+.header_nav_item_autor{
+    grid-area: autor;
+    margin: nth($margin, 1);
+}
+.header_nav_item_personajes{
+    grid-area: pers;
+    margin:nth($margin, 1);
+}
+.header_nav_item_galeria{
+    grid-area: gale ;
+    margin:nth($margin, 1);
+}

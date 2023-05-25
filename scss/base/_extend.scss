@@ -1,0 +1,32 @@
+%flex_centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+%flex_base { 
+display: flex;
+justify-content: baseline;
+align-items: end;
+};
+%img_centrada {
+    margin: 0 auto;
+    display: block;
+}
+%iframe_index {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    align-items: center;
+}
+%autor_list {
+    list-style:square inside ;
+    padding-left: 10px;
+}
+%iframe_mov {
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-self: center;
+    width:70% ;
+    height: 50%;
+}

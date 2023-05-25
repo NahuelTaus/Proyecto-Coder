@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+    font-size: nth($fontS,4) ;
+    font-weight: 200;
+    color: antiquewhite;
+}
+body{
+    background-color: nth($colores, 6);
+}
+h1 {
+    font-size: nth($fontS,1) ;
+    font-weight: 700;
+    color: nth($colores, 2);
+    padding: $paddin-tittle;
+    margin: auto;
+    text-align: center;
+}
+h2 {
+ font-size:nth($fontS,2) ;
+ font-weight: 700;
+ color: nth($colores, 2);
+ padding: $paddin-tittle;
+ margin: auto;
+} 
+p {
+    margin-left: 20px;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+main article div p, main article div img  {
+    display: block;
+}

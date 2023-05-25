@@ -1,364 +1,646 @@
- /*Estilos generales*/
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Oswald', sans-serif;
-    font-size: 16px;
-    font-weight: 200;
-    color: antiquewhite;
-}
-body{
-    background-color: rgb(39, 35, 35);
-}
-h1 {
-    font-size: 36px;
-    font-weight: 700;
-    color: rgb(228, 200, 44);
-    padding: 50px 40px 30px ;
-    margin: auto;
-    text-align: center;
-}
-h2 {
- font-size: 26px;
- font-weight: 700;
- color: rgb(228, 200, 44);
- padding: 50px 40px 30px ;
- margin: auto;
-} 
-p {
-    margin-left: 20px;
-}
-a {
-    text-decoration: none;
-}
-ul {
-    list-style: none;
-}
-main article div p, main article div img  {
-    display: block;
-}
- /*Estilos footer*/
-footer {
-    background-color: rgb(168, 9, 9);
-    width: 100%;
-    position: absolute;
-    display: block;
-    margin-top: 10%;
-}
-footer p, footer ul li a {
-    color: black;
-    font-size: 18px;
-}
-.footer_ul {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4,1fr) ;
-    grid-template-areas: 
-    "copy copy contac contac contac face"
-    "copy copy contac contac contac twit"
-    "copy copy contac contac contac insta"
-    "copy copy contac contac contac yout"
-    ;
-}
-.footer_ul_copy {
-    grid-area: copy ;
-    display: flex;
-    justify-content: baseline;
-    align-items: end;
-}
 .footer_ul_contac {
-    grid-area: contac ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.footer_ul_contac a {
-    font-size: 26px;
+
+.footer_ul_copy {
+  display: flex;
+  justify-content: baseline;
+  align-items: end;
 }
-.footer_ul_face {
-    grid-area: face ;
+
+.index_main_image {
+  margin: 0 auto;
+  display: block;
 }
-.footer_ul_twit {
-    grid-area: twit ;
+
+.index_main_2021_iframe, .index_main_2020_iframe, .index_main_2018_iframe, .index_main_20012_iframe, .index_main_2001_iframe {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
+  align-items: center;
 }
-.footer_ul_insta {
-    grid-area: insta ;
+
+.autor_main_itadaki_ul, .autor_main_paru_ul {
+  list-style: square inside;
+  padding-left: 10px;
 }
-.footer_ul_yout {
-    grid-area: yout ;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  color: antiquewhite;
 }
-ion-icon {
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-  }
-/*Estilos del header*/
+
+body {
+  background-color: rgb(39, 35, 35);
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: rgb(228, 200, 44);
+  padding: 50px 40px 30px;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: rgb(228, 200, 44);
+  padding: 50px 40px 30px;
+  margin: auto;
+}
+
+p {
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+main article div p, main article div img {
+  display: block;
+}
+
 header {
-    background-color: rgb(168, 9, 9);
-    height: 50px;
-    display: flex;
-    position: fixed;
-    width: 100%;
+  background-color: rgb(168, 9, 9);
+  height: 50px;
+  display: flex;
+  position: fixed;
+  width: 100%;
 }
 header nav ul li a {
-    color: black;
-    font-size: 18px;
+  color: black;
+  font-size: 18px;
 }
+
 .header_nav {
-    display: grid;
-    grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-"icono icono icono icono icono icono icono icono icono icono icono icono icono icono icono icono icono autor pers gale";
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "icono icono icono icono icono icono icono icono icono icono icono icono icono icono icono icono icono autor pers gale";
 }
+
 .header_nav_item_inicio {
-    grid-area: icono ;
+  grid-area: icono;
+}
 
+.header_nav_item_autor {
+  grid-area: autor;
+  margin: 10px;
 }
-.header_nav_item_autor{
-    grid-area: autor;
-    margin: 10px;
+
+.header_nav_item_personajes {
+  grid-area: pers;
+  margin: 10px;
 }
-.header_nav_item_personajes{
-    grid-area: pers;
-    margin: 10px;
+
+.header_nav_item_galeria {
+  grid-area: gale;
+  margin: 10px;
 }
-.header_nav_item_galeria{
-    grid-area: gale ;
-    margin: 10px;
+
+footer {
+  background-color: rgb(168, 9, 9);
+  width: 100%;
+  position: absolute;
+  display: block;
+  margin-top: 10%;
 }
- /*Estilos Pag Index*/
+footer p {
+  color: black;
+  font-size: 18px;
+}
+footer ul li a {
+  color: black;
+  font-size: 18px;
+}
+
+.footer_ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "copy copy contac contac contac face" "copy copy contac contac contac twit" "copy copy contac contac contac insta" "copy copy contac contac contac yout";
+}
+
+.footer_ul_copy {
+  grid-area: copy;
+}
+
+.footer_ul_contac {
+  grid-area: contac;
+}
+.footer_ul_contac a {
+  font-size: 26px;
+}
+
+.footer_ul_face {
+  grid-area: face;
+}
+
+.footer_ul_twit {
+  grid-area: twit;
+}
+
+.footer_ul_insta {
+  grid-area: insta;
+}
+
+.footer_ul_yout {
+  grid-area: yout;
+}
+
+ion-icon {
+  color: black;
+  font-size: 18px;
+}
+
 .index_main_h1 {
-   color:  rgb(39, 35, 35);;
-}
-.index_main_image {
-    display: block;
-    margin: 0 auto;
+  color: rgb(39, 35, 35);
 }
 
-.index_main_1_p {
-    text-align: center
+.index_main_1_p, .index_main_1_p2, .index_main_1_h2 {
+  text-align: center;
 }
-.index_main_1_h2 {
-    text-align: center
-}
-.index_main_1_p2{
-    text-align: center;
-}
+
 .index_main_2001 {
-    border: 10px solid #d1b412;
-    margin: 5%;
-    display: grid;
-    grid-template-columns:repeat(3,1fr) ;
-    grid-template-rows:repeat(3,1fr) ;
-    grid-template-areas: 
-    "title title title"
-    "text text img"
-    "vid vid img"
-    ;
+  border: 10px solid #d1b412;
+  margin: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "title title title" "text text img" "vid vid img";
 }
+
 .index_main_2001_h2 {
-    grid-area: title;
+  grid-area: title;
 }
+
 .index_main_2001_p {
-    grid-area: text ;
+  grid-area: text;
 }
+
 .index_main_2001_iframe {
-    grid-area: vid ;
-    display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    justify-content: center;
-    align-items: center;
+  grid-area: vid;
 }
+
 .index_main_2001_img {
-    grid-area: img ;
-    margin: 30px ;
+  grid-area: img;
+  margin: 30px;
 }
+
 .index_main_20012 {
-    border: 10px solid #d1b412;
-    margin: 5%;
-    display: grid;
-    grid-template-columns:repeat(3,1fr) ;
-    grid-template-rows:repeat(3,1fr) ;
-    grid-template-areas: 
-    "title title title"
-    "text text img"
-    "vid vid img"
-    ;
+  border: 10px solid #d1b412;
+  margin: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "title title title" "text text img" "vid vid img";
 }
+
 .index_main_20012_h2 {
-    grid-area: title;
+  grid-area: title;
 }
+
 .index_main_20012_p {
-    grid-area: text ;
+  grid-area: text;
 }
+
 .index_main_20012_iframe {
-    grid-area: vid ;
-    display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    justify-content: center;
-    align-items: center;
+  grid-area: vid;
 }
+
 .index_main_20012_img {
-    grid-area: img ;
-    margin: 30px ;
+  grid-area: img;
+  margin: 30px;
 }
+
 .index_main_2018 {
-    border: 10px solid #d1b412;
-    margin: 5%;
-    display: grid;
-    grid-template-columns:repeat(3,1fr) ;
-    grid-template-rows:repeat(3,1fr) ;
-    grid-template-areas: 
-    "title title title"
-    "text text img"
-    "vid vid img"
-    ;
+  border: 10px solid #d1b412;
+  margin: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "title title title" "text text img" "vid vid img";
 }
+
 .index_main_2018_h2 {
-    grid-area: title;
+  grid-area: title;
 }
+
 .index_main_2018_p {
-    grid-area: text ;
+  grid-area: text;
 }
+
 .index_main_2018_iframe {
-    grid-area: vid ;
-    display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    justify-content: center;
-    align-items: center;
+  grid-area: vid;
 }
+
 .index_main_2018_img {
-    grid-area: img ;
-    margin: 30px ;
+  grid-area: img;
+  margin: 30px;
 }
+
 .index_main_2020 {
-    border: 10px solid #d1b412;
-    margin: 5%;
-    display: grid;
-    grid-template-columns:repeat(3,1fr) ;
-    grid-template-rows:repeat(3,1fr) ;
-    grid-template-areas: 
-    "title title title"
-    "text text img"
-    "vid vid img"
-    ;
+  border: 10px solid #d1b412;
+  margin: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "title title title" "text text img" "vid vid img";
 }
+
 .index_main_2020_h2 {
-    grid-area: title;
+  grid-area: title;
 }
+
 .index_main_2020_p {
-    grid-area: text ;
+  grid-area: text;
 }
+
 .index_main_2020_iframe {
-    grid-area: vid ;
-    display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    justify-content: center;
-    align-items: center;
+  grid-area: vid;
 }
+
 .index_main_2020_img {
-    grid-area: img ;
-    margin: 30px ;
+  grid-area: img;
+  margin: 30px;
 }
+
 .index_main_2021 {
+  border: 10px solid #d1b412;
+  margin: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "title title title" "text text img" "vid vid img";
+}
+
+.index_main_2021_h2 {
+  grid-area: title;
+}
+
+.index_main_2021_p {
+  grid-area: text;
+}
+
+.index_main_2021_iframe {
+  grid-area: vid;
+}
+
+.index_main_2021_img {
+  grid-area: img;
+  margin: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .index_main_image {
+    height: 80%;
+    width: 80%;
+  }
+  .index_main_2001 {
     border: 10px solid #d1b412;
     margin: 5%;
     display: grid;
-    grid-template-columns:repeat(3,1fr) ;
-    grid-template-rows:repeat(3,1fr) ;
-    grid-template-areas: 
-    "title title title"
-    "text text img"
-    "vid vid img"
-    ;
-}
-.index_main_2021_h2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "title title title" "img img img" "text text text" "vid vid vid";
+  }
+  .index_main_2001_h2 {
     grid-area: title;
-}
-.index_main_2021_p {
-    grid-area: text ;
-}
-.index_main_2021_iframe {
-    grid-area: vid ;
-    display: flex;
+  }
+  .index_main_2001_p {
+    grid-area: text;
+  }
+  .index_main_2001_iframe {
+    grid-area: vid;
     margin-left: 10%;
     margin-right: 10%;
-    justify-content: center;
-    align-items: center;
-}
-.index_main_2021_img {
-    grid-area: img ;
-    margin: 30px ;
-}
- /*Estilos Pag Autor*/
- .autor_main_itadaki {
+    justify-self: center;
+    width: 70%;
+    height: 50%;
+  }
+  .index_main_2001_img {
+    grid-area: img;
+    margin: 30px;
+    justify-self: center;
+  }
+  .index_main_20012 {
+    border: 10px solid #d1b412;
+    margin: 5%;
     display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 100px, 500px, 150px, 150px ;
-    grid-template-areas: 
-    "h2"
-    "img"
-    "p"
-    "ul"
-    ;
- }
- .autor_main_itadaki_h2 {
-    grid-area: h2;
- }
- .autor_main_itadaki_img {
-    grid-area: img ;
-    margin: 0 auto;
- }
- .autor_main_itadaki_p {
-    grid-area: p ;
- }
- .autor_main_itadaki_ul {
-    grid-area: ul ;
-    margin: 0 auto ;
- }
- .autor_main_itadaki_ul , .autor_main_paru_ul {
-    list-style:square inside ;
-    padding-left: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "title title title" "img img img" "text text text" "vid vid vid";
+  }
+  .index_main_20012_h2 {
+    grid-area: title;
+  }
+  .index_main_20012_p {
+    grid-area: text;
+  }
+  .index_main_20012_iframe {
+    grid-area: vid;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-self: center;
+    width: 70%;
+    height: 50%;
+  }
+  .index_main_20012_img {
+    grid-area: img;
+    margin: 30px;
+    justify-self: center;
+  }
+  .index_main_2018 {
+    border: 10px solid #d1b412;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "title title title" "img img img" "text text text" "vid vid vid";
+  }
+  .index_main_2018_h2 {
+    grid-area: title;
+  }
+  .index_main_2018_p {
+    grid-area: text;
+  }
+  .index_main_2018_iframe {
+    grid-area: vid;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-self: center;
+    width: 70%;
+    height: 50%;
+  }
+  .index_main_2018_img {
+    grid-area: img;
+    margin: 30px;
+    justify-self: center;
+  }
+  .index_main_2020 {
+    border: 10px solid #d1b412;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "title title title" "img img img" "text text text" "vid vid vid";
+  }
+  .index_main_2020_h2 {
+    grid-area: title;
+  }
+  .index_main_2020_p {
+    grid-area: text;
+  }
+  .index_main_2020_iframe {
+    grid-area: vid;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-self: center;
+    width: 70%;
+    height: 50%;
+  }
+  .index_main_2020_img {
+    grid-area: img;
+    margin: 30px;
+    justify-self: center;
+  }
+  .index_main_2021 {
+    border: 10px solid #d1b412;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "title title title" "img img img" "text text text" "vid vid vid";
+  }
+  .index_main_2021_h2 {
+    grid-area: title;
+  }
+  .index_main_2021_p {
+    grid-area: text;
+  }
+  .index_main_2021_iframe {
+    grid-area: vid;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-self: center;
+    width: 70%;
+    height: 50%;
+  }
+  .index_main_2021_img {
+    grid-area: img;
+    margin: 30px;
+    justify-self: center;
+  }
 }
+.autor_main_itadaki {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: "100px, 500px, 150px, 150px";
+  grid-template-areas: "h2" "img" "p" "ul";
+}
+
+.autor_main_itadaki_h2 {
+  grid-area: h2;
+}
+
+.autor_main_itadaki_img {
+  grid-area: img;
+  margin: 0 auto;
+}
+
+.autor_main_itadaki_p {
+  grid-area: p;
+}
+
+.autor_main_itadaki_ul {
+  grid-area: ul;
+  margin: 0 auto;
+}
+
 .autor_main_paru {
-    display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 100px, 500px, 150px, 150px ;
-    grid-template-areas: 
-    "h2"
-    "img"
-    "p"
-    "ul"
-    ;
- }
- .autor_main_paru_h2 {
-    grid-area: h2;
- }
- .autor_main_paru_img {
-    grid-area: img ;
-    margin: 0 auto;
- }
- .autor_main_paru_p {
-    grid-area: p ;
- }
- .autor_main_paru_ul {
-    grid-area: ul ;
-    margin: 0 auto ;
- }
-  /*Estilos Pag Personajes*/
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: "100px, 500px, 150px, 150px";
+  grid-template-areas: "h2" "img" "p" "ul";
+}
+
+.autor_main_paru_h2 {
+  grid-area: h2;
+}
+
+.autor_main_paru_img {
+  grid-area: img;
+  margin: 0 auto;
+}
+
+.autor_main_paru_p {
+  grid-area: p;
+}
+
+.autor_main_paru_ul {
+  grid-area: ul;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .autor_main_itadaki_img, .autor_main_paru_img {
+    height: 80%;
+    width: 80%;
+  }
+}
+.personajes_main_baki {
+  display: grid;
+  grid-template-columns: "1fr,1fr,1fr";
+  grid-template-rows: "1fr,1fr,1fr";
+  grid-template-areas: "h2 h2 h2" "img p p" "img p p";
+}
+
+.personajes_main_baki_h2 {
+  grid-area: h2;
+}
+
+.personajes_main_baki_p {
+  grid-area: p;
+}
+
+.personajes_main_baki_img {
+  grid-area: img;
+}
+
+.personajes_main_yuuji {
+  display: grid;
+  grid-template-columns: "1fr,1fr,1fr";
+  grid-template-rows: "1fr,1fr,1fr";
+  grid-template-areas: "h2 h2 h2" "img p p" "img p p";
+}
+
+.personajes_main_yuuji_h2 {
+  grid-area: h2;
+}
+
+.personajes_main_yuuji_p {
+  grid-area: p;
+}
+
+.personajes_main_yuuji_img {
+  grid-area: img;
+}
+
+.personajes_main_jack {
+  display: grid;
+  grid-template-columns: "1fr,1fr,1fr";
+  grid-template-rows: "1fr,1fr,1fr";
+  grid-template-areas: "h2 h2 h2" "img p p" "img p p";
+}
+
+.personajes_main_jack_h2 {
+  grid-area: h2;
+}
+
+.personajes_main_jack_p {
+  grid-area: p;
+}
+
+.personajes_main_jack_img {
+  grid-area: img;
+}
+
+.personajes_main_hana {
+  display: grid;
+  grid-template-columns: "1fr,1fr,1fr";
+  grid-template-rows: "1fr,1fr,1fr";
+  grid-template-areas: "h2 h2 h2" "img p p" "img p p";
+}
+
+.personajes_main_hana_h2 {
+  grid-area: h2;
+}
+
+.personajes_main_hana_p {
+  grid-area: p;
+}
+
+.personajes_main_hana_img {
+  grid-area: img;
+}
+
+.personajes_main_doppo {
+  display: grid;
+  grid-template-columns: "1fr,1fr,1fr";
+  grid-template-rows: "1fr,1fr,1fr";
+  grid-template-areas: "h2 h2 h2" "img p p" "img p p";
+}
+
+.personajes_main_doppo_h2 {
+  grid-area: h2;
+}
+
+.personajes_main_doppo_p {
+  grid-area: p;
+}
+
+.personajes_maindoppo_img {
+  grid-area: img;
+}
+
+.personajes_main_retsu {
+  display: grid;
+  grid-template-columns: "1fr,1fr,1fr";
+  grid-template-rows: "1fr,1fr,1fr";
+  grid-template-areas: "h2 h2 h2" "img p p" "img p p";
+}
+
+.personajes_main_retsu_h2 {
+  grid-area: h2;
+}
+
+.personajes_main_retsu_p {
+  grid-area: p;
+}
+
+.personajes_main_retsu_img {
+  grid-area: img;
+}
+
+.personajes_main_oliva {
+  display: grid;
+  grid-template-columns: "1fr,1fr,1fr";
+  grid-template-rows: "1fr,1fr,1fr";
+  grid-template-areas: "h2 h2 h2" "img p p" "img p p";
+}
+
+.personajes_main_oliva_h2 {
+  grid-area: h2;
+}
+
+.personajes_main_oliva_p {
+  grid-area: p;
+}
+
+.personajes_main_oliva_img {
+  grid-area: img;
+}
+
+@media only screen and (max-width: 768px) {
   .personajes_main_baki {
     display: grid;
-    grid-template-columns:1fr,1fr,1fr ;
-    grid-template-rows:1fr,1fr,1fr ;
-    grid-template-areas:
-    "h2 h2 h2"
-    "img p p"
-    "img p p"
-    ;
+    grid-template-columns: "1fr,1fr,1fr";
+    grid-template-rows: "1fr,1fr,1fr";
+    grid-template-areas: "h2 h2 h2" "img img img" "p p p";
   }
   .personajes_main_baki_h2 {
     grid-area: h2;
@@ -368,551 +650,173 @@ header nav ul li a {
   }
   .personajes_main_baki_img {
     grid-area: img;
+    justify-self: center;
   }
-.personajes_main_yuuji {
+  .personajes_main_yuuji {
     display: grid;
-    grid-template-columns:1fr,1fr,1fr ;
-    grid-template-rows:1fr,1fr,1fr ;
-    grid-template-areas:
-    "h2 h2 h2"
-    "img p p"
-    "img p p"
-    ;
+    grid-template-columns: "1fr,1fr,1fr";
+    grid-template-rows: "1fr,1fr,1fr";
+    grid-template-areas: "h2 h2 h2" "img img img" "p p p";
   }
-.personajes_main_yuuji_h2 {
+  .personajes_main_yuuji_h2 {
     grid-area: h2;
   }
-.personajes_main_yuuji_p {
+  .personajes_main_yuuji_p {
     grid-area: p;
   }
-.personajes_main_yuuji_img {
+  .personajes_main_yuuji_img {
     grid-area: img;
+    justify-self: center;
   }
-.personajes_main_jack {
+  .personajes_main_hana {
     display: grid;
-    grid-template-columns:1fr,1fr,1fr ;
-    grid-template-rows:1fr,1fr,1fr ;
-    grid-template-areas:
-    "h2 h2 h2"
-    "img p p"
-    "img p p"
-    ;
+    grid-template-columns: "1fr,1fr,1fr";
+    grid-template-rows: "1fr,1fr,1fr";
+    grid-template-areas: "h2 h2 h2" "img img img" "p p p";
   }
-.personajes_main_jack_h2 {
+  .personajes_main_hana_h2 {
     grid-area: h2;
   }
-.personajes_main_jack_p {
+  .personajes_main_hana_p {
     grid-area: p;
   }
-.personajes_main_jack_img {
+  .personajes_main_hana_img {
     grid-area: img;
+    justify-self: center;
   }
-.personajes_main_jack {
+  .personajes_main_retsu {
     display: grid;
-    grid-template-columns:1fr,1fr,1fr ;
-    grid-template-rows:1fr,1fr,1fr ;
-    grid-template-areas:
-    "h2 h2 h2"
-    "img p p"
-    "img p p"
-    ;
+    grid-template-columns: "1fr,1fr,1fr";
+    grid-template-rows: "1fr,1fr,1fr";
+    grid-template-areas: "h2 h2 h2" "img img img" "p p p";
   }
-.personajes_main_hana {
-    display: grid;
-    grid-template-columns:1fr,1fr,1fr ;
-    grid-template-rows:1fr,1fr,1fr ;
-    grid-template-areas:
-    "h2 h2 h2"
-    "img p p"
-    "img p p"
-    ;
-  }
-.personajes_main_hana_h2 {
+  .personajes_main_retsu_h2 {
     grid-area: h2;
   }
-.personajes_main_hana_p {
+  .personajes_main_retsu_p {
     grid-area: p;
   }
-.personajes_main_hana_img {
+  .personajes_main_retsu_img {
     grid-area: img;
+    justify-self: center;
   }
-.personajes_main_doppo {
+  .personajes_main_doppo {
     display: grid;
-    grid-template-columns:1fr,1fr,1fr ;
-    grid-template-rows:1fr,1fr,1fr ;
-    grid-template-areas:
-    "h2 h2 h2"
-    "img p p"
-    "img p p"
-    ;
+    grid-template-columns: "1fr,1fr,1fr";
+    grid-template-rows: "1fr,1fr,1fr";
+    grid-template-areas: "h2 h2 h2" "img img img" "p p p";
   }
-.personajes_main_doppo_h2 {
+  .personajes_main_doppo_h2 {
     grid-area: h2;
   }
-.personajes_main_doppo_p {
+  .personajes_main_doppo_p {
     grid-area: p;
   }
-.personajes_main_doppo_img {
+  .personajes_main_doppo_img {
     grid-area: img;
+    justify-self: center;
   }
-.personajes_main_retsu {
+  .personajes_main_jack {
     display: grid;
-    grid-template-columns:1fr,1fr,1fr ;
-    grid-template-rows:1fr,1fr,1fr ;
-    grid-template-areas:
-    "h2 h2 h2"
-    "img p p"
-    "img p p"
-    ;
+    grid-template-columns: "1fr,1fr,1fr";
+    grid-template-rows: "1fr,1fr,1fr";
+    grid-template-areas: "h2 h2 h2" "img img img" "p p p";
   }
-.personajes_main_retsu_h2 {
+  .personajes_main_jack_h2 {
     grid-area: h2;
   }
-.personajes_main_retsu_p {
+  .personajes_main_jack_p {
     grid-area: p;
   }
-.personajes_main_retsu_img {
+  .personajes_main_jack_img {
     grid-area: img;
+    justify-self: center;
   }
-.personajes_main_oliva {
+  .personajes_main_oliva {
     display: grid;
-    grid-template-columns:1fr,1fr,1fr ;
-    grid-template-rows:1fr,1fr,1fr ;
-    grid-template-areas:
-    "h2 h2 h2"
-    "img p p"
-    "img p p"
-    ;
+    grid-template-columns: "1fr,1fr,1fr";
+    grid-template-rows: "1fr,1fr,1fr";
+    grid-template-areas: "h2 h2 h2" "img img img" "p p p";
   }
-.personajes_main_oliva_h2 {
+  .personajes_main_oliva_h2 {
     grid-area: h2;
   }
-.personajes_main_oliva_p {
+  .personajes_main_oliva_p {
     grid-area: p;
   }
-.personajes_main_oliva_img {
+  .personajes_main_oliva_img {
     grid-area: img;
+    justify-self: center;
   }
-/*Estilos Pag Galeria*/
-.galeria_main {
-    display: grid;
-    grid-template-columns:repeat(4,1fr) ;
-    grid-template-rows:repeat(10,1fr) ;
-    grid-template-areas:
-    "h1 h1 h1 h1"
-    "ba2 ba2 ba3 ba3"
-    "yu2 yu2 ja3 ja3"
-    "ba ba yu yu"
-    "dop2 dop2 dop2 espa"
-    "ba4 ba4 ba4 ba4"
-    "ja2 ja2 ja2 ja2"
-    "ja ja ja ja"
-    "dop dop dop dop"
-    ;
 }
-.galeria_main_h1{
-    grid-area:h1 ;
-    display: flex;
-
-}
-.galeria_main_baki {
-    grid-area: ba;
-}
-.galeria_main_baki2 {
-    grid-area: ba2;
-}
-.galeria_main_baki3{
-    grid-area: ba3;
-}
-.galeria_main_baki4 {
-    grid-area: ba4;
-}
-.galeria_main_yuji {
-    grid-area: yu;
-}
-.galeria_main_yuji2 {
-    grid-area: yu2;
-}
-.galeria_main_doppo{
-    grid-area: dop;
-}
-.galeria_main_doppo2 {
-    grid-area: dop2;
-}
-.galeria_main_espalda{
-    grid-area: espa;
-}
-.galeria_main_jack {
-    grid-area: ja;
-}
-.galeria_main_jack2 {
-    grid-area: ja2;
-}
-.galeria_main_jack3 {
-    grid-area: ja3;
-}
-
-/*Estilos Pag Contactos*/
 .contacto_main_form {
-    width:60% ;
-    height: 80%;
-    margin: 20%;
-    display: grid;
-    grid-template-columns:repeat(4,1fr) ;
-    grid-template-rows:40px,50px,30px,1fr;
-    grid-template-areas: 
-    "name namei email emaili"
-    "text text text text"
-    "texti texti texti texti"
-    "submit submit submit submit"
-    ;
- }
+  width: 60%;
+  height: 80%;
+  margin: 20%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: "40px,50px,30px,1fr";
+  grid-template-areas: "name name namei namei email emaili emaili emaili" "text text text text text text text text" "texti texti texti texti texti texti texti texti" "submit submit submit submit submit submit submit submit";
+}
+
 .contacto_main_form_name {
-    grid-area: name ;
-    justify-self: end;
- }
+  grid-area: name;
+  justify-self: end;
+}
+
 .contacto_main_form_email {
-    grid-area: email ;
-    justify-self: end;
- }
+  grid-area: email;
+  justify-self: end;
+}
+
 .contacto_main_form_text {
-    grid-area: text ;
-    justify-self: center;
+  grid-area: text;
+  justify-self: center;
+}
 
- }
 .contacto_main_form_submit {
-    grid-area: submit ;
-    width:200px ;
-    height: 30px;
-    justify-self: center;
-    color: #000;
- }
-.contacto_main_form_name_input {
-    grid-area: namei;
-    color: #000;
- }
-.contacto_main_form_email_input{
-    grid-area: emaili;
-    color: #000;
- }
-.contacto_main_form_text_input{
-    grid-area: texti;
-    width:500px ;
-    height: 500px;
-    justify-self: center;
-    color: #000;
- }
-.contacto_main_form_submit_button{
-display: none;
- }
- /*Estilos mobile*/
- @media only screen and (max-width: 768px) {
-     /*Estilos mobile Index*/
-    .index_main_image {
-        height: 80%;
-        width: 80%;
-    }
-    .index_main_2001 {
-        border: 10px solid #d1b412;
-        margin: 5%;
-        display: grid;
-        grid-template-columns:repeat(3,1fr) ;
-        grid-template-rows:repeat(4,1fr) ;
-        grid-template-areas: 
-        "title title title"
-        "img img img"
-        "text text text"
-        "vid vid vid"
-        ;
-    }
-    .index_main_2001_h2 {
-        grid-area: title;
-    }
-    .index_main_2001_p {
-        grid-area: text ;
-    }
-    .index_main_2001_iframe {
-        grid-area: vid ;
-        margin-left: 10%;
-        margin-right: 10%;
-        justify-self: center;
-        width:70% ;
-        height: 50%;
-    }
-    .index_main_2001_img {
-        grid-area: img ;
-        margin: 30px ;
-        justify-self: center;
-    }
-    .index_main_20012 {
-        border: 10px solid #d1b412;
-        margin: 5%;
-        display: grid;
-        grid-template-columns:repeat(3,1fr) ;
-        grid-template-rows:repeat(4,1fr) ;
-        grid-template-areas: 
-        "title title title"
-        "img img img"
-        "text text text"
-        "vid vid vid"
-        ;
-    }
-    .index_main_20012_h2 {
-        grid-area: title;
-    }
-    .index_main_20012_p {
-        grid-area: text ;
-    }
-    .index_main_20012_iframe {
-        grid-area: vid ;
-        margin-left: 10%;
-        margin-right: 10%;
-        justify-self: center;
-        width:70% ;
-        height: 50%;
-    }
-    .index_main_20012_img {
-        grid-area: img ;
-        margin: 30px ;
-        justify-self: center;
-    }
-    .index_main_2018 {
-        border: 10px solid #d1b412;
-        margin: 5%;
-        display: grid;
-        grid-template-columns:repeat(3,1fr) ;
-        grid-template-rows:repeat(4,1fr) ;
-        grid-template-areas: 
-        "title title title"
-        "img img img"
-        "text text text"
-        "vid vid vid"
-        ;
-    }
-    .index_main_2018_h2 {
-        grid-area: title;
-    }
-    .index_main_2018_p {
-        grid-area: text ;
-    }
-    .index_main_2018_iframe {
-        grid-area: vid ;
-        margin-left: 10%;
-        margin-right: 10%;
-        justify-self: center;
-        width:70% ;
-        height: 50%;
-    }
-    .index_main_2018_img {
-        grid-area: img ;
-        margin: 30px ;
-        justify-self: center;
-    }
-    .index_main_2020 {
-        border: 10px solid #d1b412;
-        margin: 5%;
-        display: grid;
-        grid-template-columns:repeat(3,1fr) ;
-        grid-template-rows:repeat(4,1fr) ;
-        grid-template-areas: 
-        "title title title"
-        "img img img"
-        "text text text"
-        "vid vid vid"
-        ;
-    }
-    .index_main_2020_h2 {
-        grid-area: title;
-    }
-    .index_main_2020_p {
-        grid-area: text ;
-    }
-    .index_main_2020_iframe {
-        grid-area: vid ;
-        margin-left: 10%;
-        margin-right: 10%;
-        justify-self: center;
-        width:70% ;
-        height: 50%;
-    }
-    .index_main_2020_img {
-        grid-area: img ;
-        margin: 30px ;
-        justify-self: center;
-    }
-    .index_main_2021 {
-        border: 10px solid #d1b412;
-        margin: 5%;
-        display: grid;
-        grid-template-columns:repeat(3,1fr) ;
-        grid-template-rows:repeat(4,1fr) ;
-        grid-template-areas: 
-        "title title title"
-        "img img img"
-        "text text text"
-        "vid vid vid"
-        ;
-    }
-    .index_main_2021_h2 {
-        grid-area: title;
-    }
-    .index_main_2021_p {
-        grid-area: text ;
-    }
-    .index_main_2021_iframe {
-        grid-area: vid ;
-        margin-left: 10%;
-        margin-right: 10%;
-        justify-self: center;
-        width:70% ;
-        height: 50%;
-    }
-    .index_main_2021_img {
-        grid-area: img ;
-        margin: 30px ;
-        justify-self: center;
-    }
-    
+  grid-area: submit;
+  width: 200px;
+  height: 30px;
+  justify-self: center;
+  color: black;
+}
 
-      /*Estilos mobile Personajes*/
-    .personajes_main_baki {
-        display: grid;
-        grid-template-columns:1fr,1fr,1fr ;
-        grid-template-rows:1fr,1fr,1fr ;
-        grid-template-areas:
-        "h2 h2 h2"
-        "img img img"
-        "p p p"
-        ;
-    }
-    .personajes_main_baki_h2 {
-        grid-area: h2;
-    }
-      .personajes_main_baki_p {
-        grid-area: p;
-    }
-    .personajes_main_baki_img {
-        grid-area: img;
-        justify-self: center;
-    }
-    .personajes_main_yuuji {
-        display: grid;
-        grid-template-columns:1fr,1fr,1fr ;
-        grid-template-rows:1fr,1fr,1fr ;
-        grid-template-areas:
-        "h2 h2 h2"
-        "img img img"
-        "p p p"
-        ;
-    }
-    .personajes_main_yuuji_h2 {
-        grid-area: h2;
-    }
-      .personajes_main_yuuji_p {
-        grid-area: p;
-    }
-    .personajes_main_yuuji_img {
-        grid-area: img;
-        justify-self: center;
-    }
-    .personajes_main_hana {
-        display: grid;
-        grid-template-columns:1fr,1fr,1fr ;
-        grid-template-rows:1fr,1fr,1fr ;
-        grid-template-areas:
-        "h2 h2 h2"
-        "img img img"
-        "p p p"
-        ;
-    }
-    .personajes_main_hana_h2 {
-        grid-area: h2;
-    }
-      .personajes_main_hana_p {
-        grid-area: p;
-    }
-    .personajes_main_hana_img {
-        grid-area: img;
-        justify-self: center;
-    }
-    .personajes_main_doppo {
-        display: grid;
-        grid-template-columns:1fr,1fr,1fr ;
-        grid-template-rows:1fr,1fr,1fr ;
-        grid-template-areas:
-        "h2 h2 h2"
-        "img img img"
-        "p p p"
-        ;
-    }
-    .personajes_main_doppo_h2 {
-        grid-area: h2;
-    }
-      .personajes_main_doppo_p {
-        grid-area: p;
-    }
-    .personajes_main_doppo_img {
-        grid-area: img;
-        justify-self: center;
-    }
-    .personajes_main_jack {
-        display: grid;
-        grid-template-columns:1fr,1fr,1fr ;
-        grid-template-rows:1fr,1fr,1fr ;
-        grid-template-areas:
-        "h2 h2 h2"
-        "img img img"
-        "p p p"
-        ;
-    }
-    .personajes_main_jack_h2 {
-        grid-area: h2;
-    }
-      .personajes_main_jack_p {
-        grid-area: p;
-    }
-    .personajes_main_jack_img {
-        grid-area: img;
-        justify-self: center;
-    }
-    .personajes_main_oliva {
-        display: grid;
-        grid-template-columns:1fr,1fr,1fr ;
-        grid-template-rows:1fr,1fr,1fr ;
-        grid-template-areas:
-        "h2 h2 h2"
-        "img img img"
-        "p p p"
-        ;
-    }
-    .personajes_main_oliva_h2 {
-        grid-area: h2;
-    }
-      .personajes_main_oliva_p {
-        grid-area: p;
-    }
-    .personajes_main_oliva_img {
-        grid-area: img;
-        justify-self: center;
-    }
-    .personajes_main_retsu {
-        display: grid;
-        grid-template-columns:1fr,1fr,1fr ;
-        grid-template-rows:1fr,1fr,1fr ;
-        grid-template-areas:
-        "h2 h2 h2"
-        "img img img"
-        "p p p"
-        ;
-    }
-    .personajes_main_retsu_h2 {
-        grid-area: h2;
-    }
-      .personajes_main_retsu_p {
-        grid-area: p;
-    }
-    .personajes_main_retsu_img {
-        grid-area: img;
-        justify-self: center;
-    }
- }
+.contacto_main_form_name_input {
+  grid-area: namei;
+  width: 60%;
+  color: black;
+}
+
+.contacto_main_form_email_input {
+  grid-area: emaili;
+  width: 60%;
+  color: black;
+}
+
+.contacto_main_form_text_input {
+  grid-area: texti;
+  width: 500px;
+  height: 500px;
+  justify-self: center;
+  color: black;
+}
+
+.contacto_main_form_submit_button {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .contacto_main_form {
+    display: grid;
+    grid-template-columns: "1fr,1fr";
+    grid-template-rows: "30px 30px 30px 300px 30px";
+    grid-template-areas: "name namei" "email emaili" "text text" "texti texti" "submit submit";
+  }
+  .contacto_main_form_text_input {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

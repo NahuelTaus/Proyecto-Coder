@@ -1,0 +1,266 @@
+.index_main_h1 {
+    color:  rgb(39, 35, 35);;
+ }
+ .index_main_image {
+    @extend %img_centrada;
+ }
+ 
+ .index_main_1_p , .index_main_1_p2 , .index_main_1_h2 {
+     text-align: center
+ }
+ .index_main_2001 {
+    border:map-get($indexCont,borde) ;
+    margin:map-get($indexCont,m) ;
+    display:map-get($indexCont,disp) ;
+    grid-template-columns:map-get($indexCont,grid_columns) ;
+    grid-template-rows:map-get($indexCont,grid_rows) ;
+    grid-template-areas:map-get($indexCont,grid_areas) ;
+}
+.index_main_2001_h2 {
+    grid-area: title;
+}
+.index_main_2001_p {
+    grid-area: text ;
+}
+.index_main_2001_iframe {
+    grid-area: vid ;
+    @extend %iframe_index;
+}
+.index_main_2001_img {
+    grid-area: img ;
+    margin: nth($margin,3);
+}
+.index_main_20012 {
+    border:map-get($indexCont,borde) ;
+    margin:map-get($indexCont,m) ;
+    display:map-get($indexCont,disp) ;
+    grid-template-columns:map-get($indexCont,grid_columns) ;
+    grid-template-rows:map-get($indexCont,grid_rows) ;
+    grid-template-areas:map-get($indexCont,grid_areas) ;
+}
+.index_main_20012_h2 {
+    grid-area: title;
+}
+.index_main_20012_p {
+    grid-area: text ;
+}
+.index_main_20012_iframe {
+    grid-area: vid ;
+    @extend %iframe_index;
+}
+.index_main_20012_img {
+    grid-area: img ;
+    margin: nth($margin,3);
+}
+.index_main_2018 {
+    border:map-get($indexCont,borde) ;
+    margin:map-get($indexCont,m) ;
+    display:map-get($indexCont,disp) ;
+    grid-template-columns:map-get($indexCont,grid_columns) ;
+    grid-template-rows:map-get($indexCont,grid_rows) ;
+    grid-template-areas:map-get($indexCont,grid_areas) ;
+}
+.index_main_2018_h2 {
+    grid-area: title;
+}
+.index_main_2018_p {
+    grid-area: text ;
+}
+.index_main_2018_iframe {
+    grid-area: vid ;
+    @extend %iframe_index;
+}
+.index_main_2018_img {
+    grid-area: img ;
+    margin: nth($margin,3);
+}
+.index_main_2020 {
+    border:map-get($indexCont,borde) ;
+    margin:map-get($indexCont,m) ;
+    display:map-get($indexCont,disp) ;
+    grid-template-columns:map-get($indexCont,grid_columns) ;
+    grid-template-rows:map-get($indexCont,grid_rows) ;
+    grid-template-areas:map-get($indexCont,grid_areas) ;
+}
+.index_main_2020_h2 {
+    grid-area: title;
+}
+.index_main_2020_p {
+    grid-area: text ;
+}
+.index_main_2020_iframe {
+    grid-area: vid ;
+    @extend %iframe_index;
+}
+.index_main_2020_img {
+    grid-area: img ;
+    margin: nth($margin,3);
+}
+.index_main_2021 {
+    border:map-get($indexCont,borde) ;
+    margin:map-get($indexCont,m) ;
+    display:map-get($indexCont,disp) ;
+    grid-template-columns:map-get($indexCont,grid_columns) ;
+    grid-template-rows:map-get($indexCont,grid_rows) ;
+    grid-template-areas:map-get($indexCont,grid_areas) ;
+}
+.index_main_2021_h2 {
+    grid-area: title;
+}
+.index_main_2021_p {
+    grid-area: text ;
+}
+.index_main_2021_iframe {
+    grid-area: vid ;
+    @extend %iframe_index;
+}
+.index_main_2021_img {
+    grid-area: img ;
+    margin: nth($margin,3);
+}
+@media only screen and (max-width: 768px) {
+.index_main_image {
+       height: 80%;
+       width: 80%;
+   }
+.index_main_2001 {
+       border: map-get($indexMov,bd );
+       margin: map-get($indexMov,m );
+       display: map-get($indexMov, disp);
+       grid-template-columns:map-get($indexMov, grid_columns);
+       grid-template-rows:map-get($indexMov, grid_rows);
+       grid-template-areas: map-get($indexMov, grid_areas)
+       ;
+   }
+.index_main_2001_h2 {
+       grid-area: title;
+   }
+.index_main_2001_p {
+       grid-area: text ;
+   }
+.index_main_2001_iframe {
+       grid-area: vid ;
+       margin-left: 10%;
+       margin-right: 10%;
+       justify-self: center;
+       width:70% ;
+       height: 50%;
+   }
+.index_main_2001_img {
+       grid-area: img ;
+       margin: 30px ;
+       justify-self: center;
+   }
+.index_main_20012 {
+    border: map-get($indexMov,bd );
+    margin: map-get($indexMov,m );
+    display: map-get($indexMov, disp);
+    grid-template-columns:map-get($indexMov, grid_columns);
+    grid-template-rows:map-get($indexMov, grid_rows);
+    grid-template-areas: map-get($indexMov, grid_areas)
+    ;
+}
+.index_main_20012_h2 {
+    grid-area: title;
+}
+.index_main_20012_p {
+    grid-area: text ;
+}
+.index_main_20012_iframe {
+    grid-area: vid ;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-self: center;
+    width:70% ;
+    height: 50%;
+}
+.index_main_20012_img {
+    grid-area: img ;
+    margin: 30px ;
+    justify-self: center;
+}
+.index_main_2018 {
+    border: map-get($indexMov,bd );
+    margin: map-get($indexMov,m );
+    display: map-get($indexMov, disp);
+    grid-template-columns:map-get($indexMov, grid_columns);
+    grid-template-rows:map-get($indexMov, grid_rows);
+    grid-template-areas: map-get($indexMov, grid_areas)
+    ;
+}
+.index_main_2018_h2 {
+    grid-area: title;
+}
+.index_main_2018_p {
+    grid-area: text ;
+}
+.index_main_2018_iframe {
+    grid-area: vid ;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-self: center;
+    width:70% ;
+    height: 50%;
+}
+.index_main_2018_img {
+    grid-area: img ;
+    margin: 30px ;
+    justify-self: center;
+}
+.index_main_2020 {
+    border: map-get($indexMov,bd );
+    margin: map-get($indexMov,m );
+    display: map-get($indexMov, disp);
+    grid-template-columns:map-get($indexMov, grid_columns);
+    grid-template-rows:map-get($indexMov, grid_rows);
+    grid-template-areas: map-get($indexMov, grid_areas)
+    ;
+}
+.index_main_2020_h2 {
+    grid-area: title;
+}
+.index_main_2020_p {
+    grid-area: text ;
+}
+.index_main_2020_iframe {
+    grid-area: vid ;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-self: center;
+    width:70% ;
+    height: 50%;
+}
+.index_main_2020_img {
+    grid-area: img ;
+    margin: 30px ;
+    justify-self: center;
+}
+.index_main_2021 {
+    border: map-get($indexMov,bd );
+    margin: map-get($indexMov,m );
+    display: map-get($indexMov, disp);
+    grid-template-columns:map-get($indexMov, grid_columns);
+    grid-template-rows:map-get($indexMov, grid_rows);
+    grid-template-areas: map-get($indexMov, grid_areas)
+    ;
+}
+.index_main_2021_h2 {
+    grid-area: title;
+}
+.index_main_2021_p {
+    grid-area: text ;
+}
+.index_main_2021_iframe {
+    grid-area: vid ;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-self: center;
+    width:70% ;
+    height: 50%;
+}
+.index_main_2021_img {
+    grid-area: img ;
+    margin: 30px ;
+    justify-self: center;
+}
+}

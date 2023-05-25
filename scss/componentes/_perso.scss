@@ -1,0 +1,219 @@
+.personajes_main_baki {
+    display: map-get($persoCont,disp);
+    grid-template-columns: map-get($persoCont,grid_columns);
+    grid-template-rows: map-get($persoCont,grid_rows);
+    grid-template-areas: map-get($persoCont,grid_areas);
+  }
+  .personajes_main_baki_h2 {
+    grid-area: h2;
+  }
+  .personajes_main_baki_p {
+    grid-area: p;
+  }
+  .personajes_main_baki_img {
+    grid-area: img;
+  }
+  .personajes_main_yuuji {
+    display: map-get($persoCont,disp);
+    grid-template-columns: map-get($persoCont,grid_columns);
+    grid-template-rows: map-get($persoCont,grid_rows);
+    grid-template-areas: map-get($persoCont,grid_areas);
+  }
+  .personajes_main_yuuji_h2 {
+    grid-area: h2;
+  }
+  .personajes_main_yuuji_p {
+    grid-area: p;
+  }
+  .personajes_main_yuuji_img {
+    grid-area: img;
+  }
+  .personajes_main_jack {
+    display: map-get($persoCont,disp);
+    grid-template-columns: map-get($persoCont,grid_columns);
+    grid-template-rows: map-get($persoCont,grid_rows);
+    grid-template-areas: map-get($persoCont,grid_areas);
+  }
+  .personajes_main_jack_h2 {
+    grid-area: h2;
+  }
+  .personajes_main_jack_p {
+    grid-area: p;
+  }
+  .personajes_main_jack_img {
+    grid-area: img;
+  }
+  .personajes_main_hana {
+    display: map-get($persoCont,disp);
+    grid-template-columns: map-get($persoCont,grid_columns);
+    grid-template-rows: map-get($persoCont,grid_rows);
+    grid-template-areas: map-get($persoCont,grid_areas);
+  }
+  .personajes_main_hana_h2 {
+    grid-area: h2;
+  }
+  .personajes_main_hana_p {
+    grid-area: p;
+  }
+  .personajes_main_hana_img {
+    grid-area: img;
+  }
+  .personajes_main_doppo {
+    display: map-get($persoCont,disp);
+    grid-template-columns: map-get($persoCont,grid_columns);
+    grid-template-rows: map-get($persoCont,grid_rows);
+    grid-template-areas: map-get($persoCont,grid_areas);
+  }
+  .personajes_main_doppo_h2 {
+    grid-area: h2;
+  }
+  .personajes_main_doppo_p {
+    grid-area: p;
+  }
+  .personajes_maindoppo_img {
+    grid-area: img;
+  }
+  .personajes_main_retsu {
+    display: map-get($persoCont,disp);
+    grid-template-columns: map-get($persoCont,grid_columns);
+    grid-template-rows: map-get($persoCont,grid_rows);
+    grid-template-areas: map-get($persoCont,grid_areas);
+  }
+  .personajes_main_retsu_h2 {
+    grid-area: h2;
+  }
+  .personajes_main_retsu_p {
+    grid-area: p;
+  }
+  .personajes_main_retsu_img {
+    grid-area: img;
+  }
+  .personajes_main_oliva {
+    display: map-get($persoCont,disp);
+    grid-template-columns: map-get($persoCont,grid_columns);
+    grid-template-rows: map-get($persoCont,grid_rows);
+    grid-template-areas: map-get($persoCont,grid_areas);
+  }
+  .personajes_main_oliva_h2 {
+    grid-area: h2;
+  }
+  .personajes_main_oliva_p {
+    grid-area: p;
+  }
+  .personajes_main_oliva_img {
+    grid-area: img;
+  }
+  @media only screen and (max-width: 768px) {
+.personajes_main_baki {
+      display: map-get($persoMov, disp);
+      grid-template-columns:map-get($persoMov,grid_columns );
+      grid-template-rows:map-get($persoMov, grid_rows);
+      grid-template-areas: map-get($persoMov,grid_areas );
+  }
+.personajes_main_baki_h2 {
+      grid-area: h2;
+  }
+.personajes_main_baki_p {
+      grid-area: p;
+  }
+.personajes_main_baki_img {
+      grid-area: img;
+      justify-self: center;
+  }
+.personajes_main_yuuji {
+    display: map-get($persoMov, disp);
+    grid-template-columns:map-get($persoMov,grid_columns );
+    grid-template-rows:map-get($persoMov, grid_rows);
+    grid-template-areas: map-get($persoMov,grid_areas );
+}
+.personajes_main_yuuji_h2 {
+    grid-area: h2;
+}
+.personajes_main_yuuji_p {
+    grid-area: p;
+}
+.personajes_main_yuuji_img {
+    grid-area: img;
+    justify-self: center;
+}
+.personajes_main_hana {
+  display: map-get($persoMov, disp);
+  grid-template-columns:map-get($persoMov,grid_columns );
+  grid-template-rows:map-get($persoMov, grid_rows);
+  grid-template-areas: map-get($persoMov,grid_areas );
+}
+.personajes_main_hana_h2 {
+  grid-area: h2;
+}
+.personajes_main_hana_p {
+  grid-area: p;
+}
+.personajes_main_hana_img {
+  grid-area: img;
+  justify-self: center;
+}
+.personajes_main_retsu {
+  display: map-get($persoMov, disp);
+  grid-template-columns:map-get($persoMov,grid_columns );
+  grid-template-rows:map-get($persoMov, grid_rows);
+  grid-template-areas: map-get($persoMov,grid_areas );
+}
+.personajes_main_retsu_h2 {
+  grid-area: h2;
+}
+.personajes_main_retsu_p {
+  grid-area: p;
+}
+.personajes_main_retsu_img {
+  grid-area: img;
+  justify-self: center;
+}
+.personajes_main_doppo {
+  display: map-get($persoMov, disp);
+  grid-template-columns:map-get($persoMov,grid_columns );
+  grid-template-rows:map-get($persoMov, grid_rows);
+  grid-template-areas: map-get($persoMov,grid_areas );
+}
+.personajes_main_doppo_h2 {
+  grid-area: h2;
+}
+.personajes_main_doppo_p {
+  grid-area: p;
+}
+.personajes_main_doppo_img {
+  grid-area: img;
+  justify-self: center;
+}
+.personajes_main_jack {
+  display: map-get($persoMov, disp);
+  grid-template-columns:map-get($persoMov,grid_columns );
+  grid-template-rows:map-get($persoMov, grid_rows);
+  grid-template-areas: map-get($persoMov,grid_areas );
+}
+.personajes_main_jack_h2 {
+  grid-area: h2;
+}
+.personajes_main_jack_p {
+  grid-area: p;
+}
+.personajes_main_jack_img {
+  grid-area: img;
+  justify-self: center;
+}
+.personajes_main_oliva {
+  display: map-get($persoMov, disp);
+  grid-template-columns:map-get($persoMov,grid_columns );
+  grid-template-rows:map-get($persoMov, grid_rows);
+  grid-template-areas: map-get($persoMov,grid_areas );
+}
+.personajes_main_oliva_h2 {
+  grid-area: h2;
+}
+.personajes_main_oliva_p {
+  grid-area: p;
+}
+.personajes_main_oliva_img {
+  grid-area: img;
+  justify-self: center;
+}
+  }

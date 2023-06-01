@@ -749,6 +749,10 @@ ion-icon {
     justify-self: center;
   }
 }
+.galeria_main_h1 {
+  margin-bottom: 10%;
+}
+
 .contacto_main_form {
   width: 60%;
   height: 80%;

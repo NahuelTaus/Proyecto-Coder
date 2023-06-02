@@ -4,6 +4,7 @@ footer {
     position:map-get($footer,ption)  ;
     display:map-get($footer,disp) ;
     margin-top:map-get($footer, margin-t) ;
+    z-index: 3 ;
     p {
         color: nth($colores,4) ;
         font-size: nth($fontS,3) ;

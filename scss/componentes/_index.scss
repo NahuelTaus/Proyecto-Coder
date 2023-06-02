@@ -118,6 +118,38 @@
     grid-area: img ;
     margin: nth($margin,3);
 }
+@media only screen and (max-width: 1030px) {
+    .index_main_2001_img {
+        width: 80%;
+    }
+    .index_main_20012_img {
+        width: 80%;
+    }
+    .index_main_2018_img {
+        width: 80%;
+    }
+    .index_main_2020_img {
+        width: 80%;
+    }
+    .index_main_2021_img {
+        width: 80%;
+    }
+    .index_main_2001_iframe {
+        width: 90%;
+    }
+    .index_main_20012_iframe {
+        width: 90%;
+    }
+    .index_main_2018_iframe {
+        width: 90%;
+    }
+    .index_main_2020_iframe {
+        width: 90%;
+    }
+    .index_main_2021_iframe {
+        width: 90%;
+    }
+}
 @media only screen and (max-width: 768px) {
 .index_main_image {
        height: 80%;
@@ -150,6 +182,7 @@
        grid-area: img ;
        margin: 30px ;
        justify-self: center;
+       width: 250px;
    }
 .index_main_20012 {
     border: map-get($indexMov,bd );
@@ -178,6 +211,7 @@
     grid-area: img ;
     margin: 30px ;
     justify-self: center;
+    width: 250px;
 }
 .index_main_2018 {
     border: map-get($indexMov,bd );
@@ -206,6 +240,7 @@
     grid-area: img ;
     margin: 30px ;
     justify-self: center;
+    width: 250px;
 }
 .index_main_2020 {
     border: map-get($indexMov,bd );
@@ -234,6 +269,7 @@
     grid-area: img ;
     margin: 30px ;
     justify-self: center;
+    width: 250px;
 }
 .index_main_2021 {
     border: map-get($indexMov,bd );
@@ -262,5 +298,6 @@
     grid-area: img ;
     margin: 30px ;
     justify-self: center;
+    width: 250px;
 }
 }

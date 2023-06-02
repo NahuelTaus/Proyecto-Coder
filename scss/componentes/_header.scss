@@ -4,6 +4,7 @@ header {
     display: map-get($header,disp );
     position: map-get($header,ption );
     width: map-get($header,w );
+    z-index: 3 ;
     nav {
         ul {
             li {
@@ -21,6 +22,7 @@ header {
     grid-template-rows: 1fr;
     grid-template-areas: 
 "icono icono icono icono icono icono icono icono icono icono icono icono icono icono icono icono icono autor pers gale";
+    padding-left: 0;
 }
 .header_nav_item_inicio {
     grid-area: icono ;
